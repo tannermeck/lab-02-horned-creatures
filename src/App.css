@@ -3,3 +3,12 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
 }
+.dropDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.dropDown select {
+    width: 100px;
+    margin: auto;
+}
