@@ -11,4 +11,17 @@ h1 {
 .dropDown select {
     width: 100px;
     margin: auto;
+    font-size: 20px;
+    font-family: cursive;
+}
+.hornsDropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hornsDropdown select {
+    width: 100px;
+    margin: auto;
+    font-size: 20px;
+    font-family: cursive;
 }
