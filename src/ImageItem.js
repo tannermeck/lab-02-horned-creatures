@@ -6,14 +6,22 @@ class ImageItem extends Component {
     render() { 
         return (  
            <>
-                <p className="Creatures">
-                    {this.props.animal.description}
-                    <img 
-                    alt={this.props.animal.keyword}
-                    width="100"
-                    src={this.props.animal.url}
-                    />
-                </p>
+                <section>
+                    <p className="Creatures">
+                        {this.props.animal.title}
+                        <img 
+                        alt={this.props.animal.keyword}
+                        width="200"
+                        src={this.props.animal.url}
+                        />
+                    </p>
+                </section>
+                <section className="horns">
+                    <h3>Horns:</h3>
+                    <p>
+                        {this.props.animal.horns}
+                    </p>
+                </section>
             
             </>
         );

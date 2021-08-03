@@ -1,5 +1,27 @@
 .Creatures {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    text-decoration: underline;
+}
+img {
+    border-radius: 50%;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+p {
+    font-size: 20px;
+    font-weight: 700;
+}
+.horns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.horns p {
+    margin-left: 5px;
+    margin-top: 0px;
+}
+.horns h3 {
+    margin-top: 0px;
 }
