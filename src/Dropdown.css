@@ -1,0 +1,12 @@
+.drop-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+label {
+    font-family: cursive;
+    font-size: 20px;
+    margin: 10px;
+}

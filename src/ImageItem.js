@@ -5,7 +5,7 @@ class ImageItem extends Component {
     state = {  }
     render() { 
         return (  
-           <>
+           <div className="div-creatures">
                 <section>
                     <p className="Creatures">
                         {this.props.animal.title}
@@ -23,7 +23,7 @@ class ImageItem extends Component {
                     </p>
                 </section>
             
-            </>
+            </div>
         );
     }
 }
