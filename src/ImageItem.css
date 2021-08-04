@@ -4,6 +4,9 @@
     align-items: center;
     text-decoration: underline;
 }
+.div-creatures {
+    margin: auto;
+}
 img {
     border-radius: 50%;
     padding-top: 10px;

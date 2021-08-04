@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 import images from './Data.js';
 import ImageList from './ImageList.js';
-import Dropdown from './Drowpdown.js';
+import Dropdown from './Dropdown.js';
 
 class App extends Component {
   state = { 
