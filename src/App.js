@@ -9,7 +9,7 @@ class App extends Component {
     horns: 'all',
     sortOption: 'horns'
   }
-  // keywordOption = ['all', 'narwhal', 'rhino', 'unicorn', 'unilego', 'triceratops', 'markhor', 'mouflon', 'addax', 'chameleon', 'lizard', 'dragon']
+  
   hornOption = ['all', '1', '2', '3', '100']
   handleKeywordChange=(e) => {this.setState({keyword: e.target.value, sortOption: 'keyword'})}
   handleChange=(event) => {this.setState({horns: event.target.value, sortOption: 'horns'})}
@@ -17,8 +17,8 @@ class App extends Component {
   render() { 
     let keywordOption = [...new Set(images.map(image => image.keyword))];
     keywordOption.push('all');
-    const filteredImage = images.filter(image => image.keyword === this.state.keyword || this.state.keyword === 'all')
-    const hornsFiltered = images.filter(image => this.state.horns === 'all' || image.horns === Number(this.state.horns))
+    const results = images.filter(image => ((image.keyword === this.state.keyword || this.state.keyword === 'all') && (this.state.horns === 'all' || image.horns === Number(this.state.horns))))
+    
     return ( 
       <>
         <Dropdown 
@@ -30,7 +30,7 @@ class App extends Component {
           changeEvent={this.handleChange}
           options={this.hornOption}/>
         <div>
-          <ImageList Creatures={this.state.sortOption === 'keyword' ? filteredImage : hornsFiltered}/>
+          <ImageList Creatures={results}/>
         </div>
       </>
      );
